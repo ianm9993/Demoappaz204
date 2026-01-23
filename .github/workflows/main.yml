@@ -21,6 +21,9 @@ jobs:
       - name: Publish artifact
         run: dotnet publish 
 
+      - name: List all files
+        run: ls /home/runner/work/Demoappaz204/Demoappaz204/Demoappaz204/bin/Release/net8.0/publish/
+        
       - name: Upload artifact
         uses: actions/upload-artifact@v6.0.0
         with:
