@@ -6,14 +6,14 @@ jobs:
   test: 
     runs-on: ubuntu-latest
     steps: 
-      - name: Run a one line script 
-      - run: echo "Hello World" #Directly Run a command
+      - name:Run a one-line script
+      run: echo "Hello World" #Directly Run a command
       
       - name: List all files in the current directly 
-      - run: ls -al 
+      run: ls -al 
       
       - name: Checkout Code 
-      - uses: actions/checkout@v6.0.2
+      uses: actions/checkout@v6.0.2
 
       - name: List all files in the repository
-      - run: ls -al
+      run: ls -al
